@@ -1,0 +1,76 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital@1&display=swap");
+
+* {
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Roboto", sans-serif;
+}
+
+header div {
+  background-color: #1cd1b0;
+  padding: 7px;
+  font-size: 18px;
+  font-weight: bold;
+}
+div.heroes {
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+  background-color: #00669f;
+  height: 100px;
+  font-size: 50px;
+  padding: 20px 20px;
+}
+.cointainer {
+  display: inline-block;
+  margin: 0px 0px 240px 580px;
+}
+.cointainerTarjetas {
+  display: inline-block;
+  position: relative;
+  background-color: #f3f3f3;
+  width: 300px;
+  height: 520px;
+  margin: 200px 30px 0 32px;
+  border-top-right-radius: 20px;
+  border-top-left-radius: 20px;
+}
+.batman {
+  position: absolute;
+  border-radius: 50%;
+  width: 120px;
+  height: 120px;
+  left: 85px;
+  top: 130px;
+}
+.cointainerTarjetas i {
+  position: absolute;
+  color: #cc2424;
+  font-size: 30px;
+  top: 15px;
+  left: 15px;
+}
+.cointainerTarjetas h1 {
+  text-align: center;
+  padding-top: 70px;
+}
+.cointainerTarjetas p {
+  padding: 15px 17px;
+  font-size: 16px;
+}
+.cointainerTarjetas a {
+  background-color: #00669f;
+  color: white;
+  position: absolute;
+  left: 70px;
+  top: 460px;
+  text-decoration: none;
+  padding: 10px 50px;
+}
+footer {
+  background-color: #00669f;
+  color: white;
+  height: 40px;
+  font-size: 20px;
+  padding: 9px 10px;
+}
