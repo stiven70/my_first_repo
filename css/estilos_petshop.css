@@ -1,49 +1,84 @@
 * {
   margin: 0;
+  box-sizing: border-box;
+  padding: 0;
 }
-header,
-ul {
+header div.header_top {
+  display: flex;
+  justify-content: space-between;
+  padding: 5px 52px 5px 90px;
   color: white;
   font-size: 20px;
-  list-style: none;
-  text-decoration: none;
-}
-.header_top {
   background-color: #222222;
 }
-.header_top ul li a {
+header ul {
+  display: flex;
+  list-style: none;
+}
+header ul li {
+  margin-right: 25px;
+}
+header .header_top ul li a {
   color: white;
   text-decoration: none;
 }
-.header_bottom {
+div.header_bottom {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 5px 52px 5px 90px;
   background-color: #f0a83e;
-}
-section .titulo_principal {
-  text-align: center;
-  font-size: 50px;
-}
-section .img_portada {
-  background-image: url("/imagenes/fondo.png");
-  background-repeat: no-repeat;
-  background-size: cover;
-  height: 700px;
-  text-align: center;
-}
-section .img_portada p {
-  font-size: 25px;
-  font-weight: bold;
-}
-section .img_portada a {
-  font-size: 25px;
-  font-weight: bold;
-  text-decoration: none;
+  height: 90px;
   color: white;
-  background-color: #f0a83e;
-  padding: 5px;
+  font-size: 25px;
 }
-section h1 {
-  font-size: 38px;
+div.header_bottom img {
+  width: 300px;
 }
+header .header_bottom ul li a {
+  color: white;
+  text-decoration: none;
+}
+main section.textodeImagen {
+  position: relative;
+}
+main section.textodeImagen img {
+  position: absolute;
+  width: 100%;
+}
+main section.textodeImagen div.textSlide {
+  position: absolute;
+  z-index: 1;
+  left: 1400px;
+  top: 320px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+main section.textodeImagen div.textSlide h1 {
+  color: #3c2313;
+  font-size: 60px;
+  background-color: #ffffff;
+  padding: 20px;
+  border-radius: 10px;
+  margin-bottom: 30px;
+}
+main section.textodeImagen div.textSlide span {
+  color: #3c2313;
+  font-size: 35px;
+  font-weight: bold;
+  margin-bottom: 30px;
+}
+
+main section.textodeImagen div.textSlide button {
+  width: 240px;
+  height: 90px;
+  background: #f0a83e;
+  color: #ffffff;
+  font-size: 30px;
+  border-radius: 10px;
+}
+
 section .img1 {
   background-image: url(/imagenes/churrasquito.png);
   width: 100%;
